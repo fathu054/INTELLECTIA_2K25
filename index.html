@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intellectia 2k25 — Live Results</title>
+  <meta name="description" content="Launch page for Intellectia 2k25 live results — Darussalam Dawa College - Nandi" />
+  <style>
+    :root{
+      --bg1:#0f172a; /* midnight */
+      --bg2:#061226; /* deep */
+      --accent:#ffcc33; /* gold */
+      --muted:rgba(255,255,255,0.75);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;}
+    body{
+      background: radial-gradient(1200px 600px at 10% 20%, rgba(255,204,51,0.06), transparent),
+                  radial-gradient(1000px 500px at 90% 80%, rgba(102,126,234,0.06), transparent),
+                  linear-gradient(180deg,var(--bg1), var(--bg2));
+      color: white;
+      display:flex;align-items:center;justify-content:center;padding:2rem;
+    }
+    .card{
+      width:100%;max-width:920px;background:linear-gradient(180deg,rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border-radius:18px;padding:36px;display:flex;gap:28px;align-items:center;backdrop-filter: blur(6px);
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
+      transform: translateY(12px);animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float{0%{transform:translateY(8px)}50%{transform:translateY(0)}100%{transform:translateY(8px)}}
+
+    .left{
+      flex:1;min-width:0;
+    }
+    .logo{
+      width:120px;height:120px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),#ff9f1c);box-shadow:0 8px 24px rgba(255,170,25,0.18);
+    }
+    .logo svg{width:68px;height:68px}
+
+    h1{margin:0 0 8px 0;font-size:28px;letter-spacing:0.4px}
+    .subtitle{color:var(--muted);margin:0 0 18px 0;font-size:14px}
+    .college{font-weight:600;color:#fff;margin-bottom:12px}
+
+    .right{
+      display:flex;flex-direction:column;align-items:center;gap:12px;
+    }
+    .launch-btn{
+      appearance:none;border:0;padding:18px 34px;border-radius:12px;font-size:18px;font-weight:700;cursor:pointer;
+      background: linear-gradient(90deg, rgba(255,204,51,1), rgba(255,159,28,1));
+      color:#061226;box-shadow:0 12px 30px rgba(255,159,28,0.18);transition:transform .15s ease, box-shadow .15s ease;display:inline-flex;align-items:center;gap:12px;
+    }
+    .launch-btn:active{transform:translateY(2px)}
+    .launch-btn:focus{outline:3px solid rgba(255,204,51,0.16)}
+
+    .hint{font-size:13px;color:var(--muted);text-align:center}
+
+    /* responsive */
+    @media (max-width:760px){
+      .card{flex-direction:column;align-items:center;padding:26px}
+      .logo{width:96px;height:96px}
+      h1{font-size:20px;text-align:center}
+      .right{width:100%}
+      .launch-btn{width:100%;justify-content:center}
+    }
+
+    /* subtle entry animation */
+    .card{opacity:0;transform-origin:center;animation: float 6s ease-in-out infinite, fadeIn .6s ease forwards .04s}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(18px) scale(.995)}to{opacity:1;transform:translateY(0) scale(1)}}
+
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="title">
+    <div class="left" style="display:flex;gap:18px;align-items:center;">
+      <div class="logo" aria-hidden="true">
+        <!-- simple trophy icon -->
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <path d="M20 12c0-4.4 3.6-8 8-8s8 3.6 8 8v6h12v4c0 8.8-7.2 16-16 16v4H28v-4c-8.8 0-16-7.2-16-16v-4h12v-6z" fill="#3b2f00" opacity="0.06"/>
+          <path d="M32 4c4.418 0 8 3.582 8 8v6h12v4c0 8.837-7.163 16-16 16v4H28v-4c-8.837 0-16-7.163-16-16v-4h12v-6c0-4.418 3.582-8 8-8z" fill="#fff" opacity="0.06"/>
+          <path d="M22 18c0 6.627 5.373 12 12 12s12-5.373 12-12h4c0 9.941-8.059 18-18 18S14 27.941 14 18h8z" fill="#ffffff" opacity="0.08"/>
+          <g fill="#061226">
+            <path d="M32 2c5.523 0 10 4.477 10 10v4h14v6c0 9.941-8.059 18-18 18v6H26v-6C16.059 40 8 31.941 8 22v-6h14v-4c0-5.523 4.477-10 10-10z" opacity="0.08"/>
+          </g>
+          <path d="M24 10h16v8H24z" fill="#fff" opacity="0.14"/>
+        </svg>
+      </div>
+      <div style="min-width:0;">
+        <h1 id="title">Intellectia 2k25 — Live Results</h1>
+        <p class="subtitle">Darussalam Dawa College - Nandi</p>
+        <div class="college">Art Fest — Live result portal</div>
+        <p style="margin:0;color:var(--muted);font-size:13px;max-width:44ch;">Tap the big LAUNCH button to open the live results application. Designed for quick access during the event.</p>
+      </div>
+    </div>
+    <div class="right">
+      <button class="launch-btn" id="launch" aria-label="Launch live results application"> 
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+          <path d="M5 12h14M12 5l7 7-7 7" stroke="#061226" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        LAUNCH
+      </button>
+      <p class="hint">If the page doesn't open, ensure pop-ups are allowed or try opening the link manually.</p>
+    </div>
+  </main>
+
+  <script>
+    const target = "https://int2-13c02.web.app";
+    document.getElementById('launch').addEventListener('click', ()=>{
+      // Navigate in same tab (use _blank for new tab if preferred)
+      window.location.href = target;
+    });
+
+    // allow pressing Enter/Space when focused
+    document.getElementById('launch').addEventListener('keyup', (e)=>{
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault();
+        window.location.href = target;
+      }
+    });
+  </script>
+</body>
+</html>
